@@ -1,0 +1,285 @@
+body {
+  background-color: #fff9e7;
+  width: 100%
+}
+.ldoor {
+  width: 50%;
+  background-color: blanchedalmond;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  animation: ldoor 5s;
+  animation-fill-mode: forwards;
+  
+}
+
+.rdoor {
+  width: 50%;
+  background-color: rgb(158, 95, 0);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  animation: rdoor 5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+#rotate1 {
+  font-size: 5em;
+  margin: 0;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 5;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+#rotate2 {
+  font-size: 2.2em;
+  margin: 0;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 12;
+  transform: rotate(180deg);
+  position: relative;
+}
+
+@keyframes ldoor{
+  from{left:0;}
+  to{left:-50%;}
+}
+
+@keyframes rdoor{
+  from{right:0;}
+  to{right:-50%;}
+
+}
+
+/* content page */
+
+
+
+.card {
+  display: grid;
+  height: 604px;
+  width: 86rem;
+  background: #FFFFFF;
+  align-content: center;
+}
+
+div h3 {
+  font-size: 25px;
+  writing-mode: vertical-lr;
+  letter-spacing: 2px;;
+}
+/* .about {
+  /* display: grid;
+  text-align: center;
+  height: 80px;
+  text-align: center; */
+  /* writing-mode: vertical-rl; */
+
+/* }  */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 35px;
+  text-decoration: none;
+}
+
+ul{
+  justify-content: center;
+  padding:0;
+  text-align: center;
+  top:10rem;
+  text-decoration: none;
+}
+
+.contents{
+  display: grid;
+}
+
+.headline {
+  position: absolute;
+  top: 10rem;
+  left: 252px;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.para {
+  position: absolute;
+  top: 10rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 10px;
+}
+
+
+/* project page */
+/* p1 */
+.project-card{
+  position: relative;
+  width: 37rem;
+  height: 250px;
+  color: blue;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.project-content {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  padding: 20px;
+  background-color: #fff9e7;
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform .25s;
+}
+
+.project-content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #fff;
+}
+
+h3.project-title {
+  color: green;
+  line-height: 15px;
+  font-size: 20px;
+}
+
+.project-subtitle{
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-description{
+  font-size: 14;
+  opacity: 0;
+  transition: opacity.5s;
+}
+
+.project-card:hover .project-content{
+  transform: translateY(0);
+}
+
+.project-card:hover .project-description{
+  opacity: 1;
+  transition-delay: .25s;
+}
+
+/* p2 */
+
+.project1-card{
+  position: relative;
+  width: 37rem;
+  height: 250px;
+  color: blue;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.project1-content {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  padding: 20px;
+  background-color: #fff9e7;
+  border-top-left-radius: 20px;
+  transform: translateY(145px);
+  transition: transform .25s;
+}
+
+.project1-content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  /* box-shadow: inset 48px 48px #fff; */
+}
+
+.project1-title {
+  color: green;
+  line-height: 15px;
+}
+
+.project-subtitle{
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.project1-description{
+  font-size: 14;
+  opacity: 0;
+  transition: opacity.5s;
+}
+
+.project1-card:hover .project1-content{
+  transform: translateY(0);
+}
+
+.project-card:hover .project1-description{
+  opacity: 1;
+  transition-delay: .25s;
+}
+
+.infoblock {
+  background: grey;
+  opacity: .5;
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  top: 5%;
+  left: 65%;
+}
+
+.block {
+  background: grey;
+  opacity: .5;
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  top: 5%;
+  left: 65%;
+}
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
