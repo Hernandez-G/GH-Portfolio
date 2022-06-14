@@ -125,11 +125,11 @@ ul{
 .project-card{
   position: relative;
   width: 37rem;
-  height: 250px;
+  height: 40vmin;
   color: blue;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .project-content {
@@ -189,11 +189,11 @@ h3.project-title {
 .project1-card{
   position: relative;
   width: 37rem;
-  height: 250px;
+  height: 350px;
   color: blue;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .project1-content {
@@ -282,4 +282,28 @@ ul {
 a {
   text-decoration: none;
   font-size: 20px;
+}
+
+.C4 {
+display: flex;
+}
+
+.DLS{
+  width: 100%;;
+}
+
+.DM {
+  width:100%;
+}
+
+.N3 {
+  width: 95%;
+}
+
+container{
+  display: grid;
+  grid-template-columns: 80vmin 80vmin;
+  grid-template-rows: 50vmin 50vmin;
+  justify-content: center;
+  align-content: center;
 }
