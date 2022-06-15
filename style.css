@@ -307,3 +307,8 @@ container{
   justify-content: center;
   align-content: center;
 }
+
+footer {
+  background-color: yellow;
+  height: 150px;
+}
