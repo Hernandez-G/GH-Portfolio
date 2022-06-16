@@ -22,8 +22,35 @@
     <h1>ABOUT ME:</h1>
     <p>The purpose of my work as a Software Engineer is to combine visual arts and 
       technology to provide a compelling, satisfying, and aesthetically pleasing user experience.</p>
+      
+      <a class="contact" href="#openModal-about"><button>Contact Me</button></a>
+      <div id="openModal-about" class="modalDialog">
+          <div>
+            <a href="#close"  class="close">X</a>
+          <form>
+              <label>Name: </label>
+              <br />
+              <input id="name" type="text" placeholder="Name">
+              <br />
+              <label>E-mail:</label>
+              <br />
+              <input id="email" type="text" placeholder="E-mail">
+              <br />
+              <label>Message: </label>
+              <br />
+              <textarea id="message" type="text" placeholder="Message"></textarea>
+              <br />
+              <button>Send</button>
+            </form>
+         </div>
+      </div>
+  </p>
   </section>
+  <br />
+  <br />
+  <br />
   <container>
+  <br />
   <div class="container">
     <div class="post">
         <div class="header_post">
@@ -123,9 +150,9 @@
         </div>
         <div class="body_post">
             <div class="post_content">
-                <h1>Cafe DeLaSol</h1>
+                <h1>Web3</h1>
                 <p>In cooperation with team members, I worked on the development of a full-stack Python web application 
-                  with user-friendly features, with Amazon S3 authentication and the Django Web Framework. 
+                  with user-friendly features, with AWS authentication and the Django Web Framework. 
                     Deploying the completed application through Heroku.</p>
                   <a href="https://developersmeet-sei.herokuapp.com/">[Deployed Link]</a> &nbsp;  
                   <a href="https://github.com/Hernandez-G/DevelopersMeet">[GitHub Link]</a> 
@@ -150,114 +177,3 @@
 </container>
 </body>
 </html>
-
-
-
-
-<!-- <div id="main"><div>
-  <div class="card">
-    <h1 id="myName">Gaby Hernandez</h1>
-    <nav>
-      <ul>
-        <a href="/projects.hmtl">Projects</a> &nbsp;
-      <a href="https://linkedin.com/in/gabyhernandez3"><i class="fa-brands fa-linkedin"></i></a> &nbsp;
-      <a href="https://github.com/Hernandez-G"><i class="fa-brands fa-github"></i></a> &nbsp;
-      </ul>
-    </nav>
-<div class="contents">
-  <h1>About Me</h1>
-  <p>The purpose of my work as a Software Engineer is to combine visual arts and 
-    technology to provide a compelling, satisfying, and aesthetically pleasing user experience.  </p>
-            <a href="#openModal-about"><button>Contact Me</button></a>
-      <div id="openModal-about" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-          <form>
-              <label>Name: </label>
-              <br />
-              <input id="name" type="text" placeholder="Name">
-              <br />
-              <label>E-mail:</label>
-              <br />
-              <input id="email" type="text" placeholder="E-mail">
-              <br />
-              <label>Message: </label>
-              <br />
-              <textarea id="message" type="text" placeholder="Message"></textarea>
-              <br />
-              <button>Send</button>
-            </form>
-         </div>
-      </div>
-</div>
-</div>
-
-<!-- <h1>PROJECTS:</h1> -->
-<!-- <container>
-  <article class="project-card">
-      <div class="project-content">
-          <img class="C4" src="https://i.imgur.com/xMBCfwx.png?1" />
-          <br>
-          <a href="https://i.imgur.com/1zheYjF.png?1">[Deployed Link]</a> &nbsp;
-          <a href="https://hernandez-g.github.io/Connect-Four/">[GitHub Link]</a> 
-          <br>       
-          <span class="project-subtitle">JavaScript | CSS | HTML</span>
-          <p class="project-description">
-              Reconstructed a classic two-player turning it into a browser-based game using 
-              JavaScript algorithms and data structures with front-end libraries imported for 
-              design purposes. Utilizing client-side MVC architecture separated the user interface 
-              from the game logic allowing each component reusable data and maintainable structure 
-              for deployment.
-          </p>
-      </div>
-  </article>  
-  
-  <article class="project1-card">
-      <div class="project1-content">
-          <img class="DLS" src="https://i.imgur.com/mFcRi72.png" />
-          <a href="https://pos-system-web-gh.herokuapp.com/">[Deployed Link]</a> &nbsp;
-          <a href="https://github.com/Hernandez-G/POS-System">[GitHub Link]</a>  
-          <br>      
-          <span class="project1-subtitle">Express | JavaScript | BootStrap | MongoDB</span>
-          <p>
-              To develop a user-centric Point of Sale System, it was necessary to implement Mongo 
-              database management and OAuth authentication for configuration and initialization. 
-              I implemented the Express framework and successfully 
-              created a web application using the Restful method.
-          </p>
-      </div>
-  </article> 
-  <article class="project1-card">
-      <div class="project1-content">
-          <img class="DM" src="https://user-images.githubusercontent.com/101842750/169354692-f3c54938-83f6-4d35-90ec-2bd3ff45b22e.png" />
-          <a href="https://developersmeet-sei.herokuapp.com/">[Deployed Link]</a> &nbsp;  
-          <a href="https://github.com/Hernandez-G/DevelopersMeet">[GitHub Link]</a>     
-          <br>   
-          <span class="project1-subtitle">Python | BootStrap | Django | MangoDB</span>
-          <p>
-              In cooperation with team members, I worked on the development of a full-stack Python web application 
-              with user-friendly features, with Amazon S3 authentication and the Django Web Framework. 
-              Deploying the completed application through Heroku.
-          </p>
-      </div>
-  </article> 
-  <article class="project1-card">
-      <div class="project1-content">
-          <img class="N3" src="https://i.imgur.com/DR5GXeT.png" />
-          <a href="https://nft3-react.herokuapp.com/">[Deployed Link]</a> &nbsp;     
-          <a href="https://github.com/Hernandez-G/NFT3">[GitHub Link]</a> 
-          <br />      
-          <span class="project1-subtitle">React | BootStrap | MongoDB | Node</span>
-          <br /> 
-          <br />
-          By utilizing NFTPorts' API, I created an application similar to Instagram, 
-          where users are able to filter through their searches for NFTs and add them 
-          to their favorites section. 
-          </p>
-      </div>
-  </article> 
-</container>
-
-<div>
-  SKILLS
-</div> --> 
