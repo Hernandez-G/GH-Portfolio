@@ -2,77 +2,31 @@ body {
   background-color: #fff9e7;
   width: 100%
 }
-.ldoor {
-  width: 50%;
-  background-color: blanchedalmond;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  animation: ldoor 5s;
-  animation-fill-mode: forwards;
-  
-}
-
-.rdoor {
-  width: 50%;
-  background-color: rgb(158, 95, 0);
-  height: 100%;
-  position: fixed;
-  right: 0;
-  animation: rdoor 5s;
-  animation-fill-mode: forwards;
-}
-
-
-
-
-#rotate1 {
-  font-size: 5em;
-  margin: 0;
-  writing-mode: vertical-lr;
-  text-align: center;
-  line-height: 5;
-  transform: rotate(180deg);
-  position: absolute;
-}
-
-#rotate2 {
-  font-size: 2.2em;
-  margin: 0;
-  writing-mode: vertical-lr;
-  text-align: center;
-  line-height: 12;
-  transform: rotate(180deg);
-  position: relative;
-}
-
-@keyframes ldoor{
-  from{left:0;}
-  to{left:-50%;}
-}
-
-@keyframes rdoor{
-  from{right:0;}
-  to{right:-50%;}
-
-}
 
 /* content page */
+#myName{
+  display: flex;
 
-
-
+}
 .card {
+  margin: 40px;
   display: grid;
-  height: 604px;
+  height: 85vmin;
   width: 86rem;
   background: #FFFFFF;
   align-content: center;
+  justify-content: center;
 }
 
 div h3 {
   font-size: 25px;
   writing-mode: vertical-lr;
   letter-spacing: 2px;;
+}
+
+button{
+  justify-content: center;
+  width: 10vmin;
 }
 /* .about {
   /* display: grid;
@@ -85,9 +39,10 @@ div h3 {
 
 nav {
   display: flex;
-  justify-content: center;
+  left: 8vmin;
+  top: 45px;
+  position: absolute;
   align-items: center;
-  left: 35px;
   text-decoration: none;
 }
 
@@ -99,8 +54,21 @@ ul{
   text-decoration: none;
 }
 
+
+.profile-pic {
+  position: absolute;
+  right: -65vmin;
+  width: 50vmin;
+  background-color: rgb(255, 255, 255);
+}
+
 .contents{
+  position: absolute;
+  top: 35vmin;
+  left: 20vmin;
   display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .headline {
@@ -311,4 +279,62 @@ container{
 footer {
   background-color: yellow;
   height: 150px;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  max-width: 800px;
+  width: 50vmin;
+  position: relative;
+  margin: 10% auto;
+  padding: 25px;
+  border-radius: 3px;
+  background: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.close {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f26d7d;
+  color: #fff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  padding-top: 5px;
+}
+
+.close:hover {
+  background: #fa3f6f;
 }
