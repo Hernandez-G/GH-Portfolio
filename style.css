@@ -1,9 +1,17 @@
- * {
+ /* /* * {
 	 margin: 0px;
 	 padding: 0;
-}
- body {
-	 overflow: hidden;
+	 
+	}
+body {
+	overflow: hidden;
+	/* background-image: url(https://i.imgur.com/LZ4V3wY.jpg); */
+	/* background-size: cover; */
+/* }
+
+h1.name {
+	color: white;
+	font-style: normal;
 }
 
 section {
@@ -67,9 +75,9 @@ img {
 	 height: 80%;
 	 background: #fff;
 	 position: relative;
-}
+} */
 
-.post_content h1 {
+/* .post_content h1 {
 	 font-size: 20px;
 	 font-weight: bold;
 }
@@ -126,23 +134,44 @@ img {
 	 -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
 	 -o-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
 	 transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+} */
+body{
+	background: -webkit-radial-gradient(circle, hsla(232, 100%, 9%, 1) 0%, hsla(279, 100%, 9%, 1) 100%);
 }
 
+container{
+	
+}
+.about{
+	color: white;
+	font-size: 25px;
+    background-color: rgba(255, 244, 244, 0.29);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	width: 50%;
+	border-radius: 10px;
+	height: 50vmin;
+}
  footer {
 	 width: auto;
 	 height: 100px;
 	 background: #17a16f;
-	 /* position: absolute; */
 	 right: 0;
 	 bottom: -80px;
 	 display: flex;
 	 justify-content: center;
-	 /* align-items: center; */
-	 /* animation: top 0.8s forwards; */
 }
 
- 
+
+
+.about-me{
+	align-items: center;
 }
+/*  
+
  @keyframes top {
 	 0% {
 		 opacity: 0;
@@ -230,4 +259,4 @@ textarea#message {
 
 label {
   text-align: left;
-}
+} */ 
