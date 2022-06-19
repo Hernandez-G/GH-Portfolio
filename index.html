@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/36fb1467e5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"> </script> 
@@ -14,23 +13,74 @@
 <!-- Landing Page -->
 <body>
     <nav>
-        <h1>Gaby Hernandez
-        <a href="https://linkedin.com/in/gabyhernandez3"><i class="fa-brands fa-linkedin"></i></a> &nbsp;
-        <a href="https://github.com/Hernandez-G"><i class="fa-brands fa-github"></i></a> &nbsp;
-        </h1>
+      <div class="wrap">
+        <div class="line">
+          <div class="left">
+            <div class="content">
+              <span class="spanSlow">Gaby</span>
+            </div>
+          </div><!--
+          --><div class="right">
+            <div class="content">
+              <span class="spanSlow">Gaby</span>
+            </div>
+          </div>
+        </div>
+        <div class="line">
+          <div class="left">
+            <div class="content">
+              <span class="spanSlow">Hernandez</span>
+            </div>
+          </div><!--
+          --><div class="right">
+            <div class="content">
+              <span class="spanSlow">Hernandez</span>
+            </div>
+          </div>
+          </div>
+          <div class="line">
+              <div class="left">
+                <div class="content">
+                  <span class="spanFast">Artist</span>
+                </div>
+              </div><!--
+              --><div class="right">
+                <div class="content">
+                  <span class="spanFast">Activist</span>
+                </div>
+              </div>
+            </div>
+            <div class="line">
+                <div class="left">
+                  <div class="content">
+                    <span class="spanSlow">Software
+                    <br />
+                    Engineer
+                    </span>
+                  </div>
+                </div><!--
+                --><div class="right">
+                  <div class="content">
+                    <span class="spanSlow">Photographer</span>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    <a class="links" href="https://linkedin.com/in/gabyhernandez3"><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+    <a class="links" href="https://github.com/Hernandez-G"><i class="fa-brands fa-github"></i></a> &nbsp;
     </nav>
-    <container>
+    <div class="about-container">
+        <div class="about-content">
         <h1 class="about">ABOUT ME:
-
-            <p class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Deserunt assumenda dolores alias deleniti odio harum. 
-                Dolor nesciunt consequuntur architecto omnis in accusamus blanditiis rem 
-                assumenda sapiente, soluta enim ullam quo!
-                
-            </p>
-        </h1>
-
-    </container>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Deserunt assumenda dolores alias deleniti odio harum. 
+              Dolor nesciunt consequuntur architecto omnis in accusamus blanditiis rem 
+              assumenda sapiente, soluta enim ullam quo!
+        </p>
+      </h1>        
+      </div>
+    </div>
 
     <div class="slider">
         <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
@@ -38,13 +88,15 @@
         <input type="radio" name="slider" title="slide3" class="slider__nav"/>
         <input type="radio" name="slider" title="slide4" class="slider__nav"/>
         <div class="slider__inner">
-          <div class="slider__contents"><img class="resize" src="https://i.imgur.com/nlPhpgP.png" alt="Connect-Four"></i>
+          <div class="slider__contents"><img  src="https://i.imgur.com/1zheYjF.png?1" alt="Connect-Four"></i>
             <h2 class="slider__caption">Connect Four</h2>
             <p class="slider__txt">Reconstructed a classic two-player turning it into a browser-based game using 
                 JavaScript algorithms and data structures with front-end libraries imported for 
                 design purposes.
-                <a href="https://hernandez-g.github.io/Connect-Four/">[Deployed Link]</a> &nbsp;
-                <a href="https://github.com/Hernandez-G/Connect-Four">[GitHub Link]</a>
+              <div class="exports">
+                <a href="https://github.com/Hernandez-G/Connect-Four"><i class="fa-brands fa-github-square"></i></a>
+                <a href="https://hernandez-g.github.io/Connect-Four/"><i class="fa-solid fa-right-from-bracket"></i></a> &nbsp;
+              </div>
             </p>
           </div>
           <div class="slider__contents"><img class="resize" src="https://i.imgur.com/S7hN4Ss.png" alt="POS-System"></i>
@@ -78,42 +130,3 @@
 
 </body>
 </html>
-
-<!-- <h1>DISCLAIMER: PORTFOLIO IN PROGRESS</h1>
-</div>
-<br />
-<section>
-  <h1>ABOUT ME:</h1>
-  <p>The purpose of my work as a Software Engineer is to combine visual arts and 
-    technology to provide a compelling, satisfying, and aesthetically pleasing user experience.</p>
-    
-    <a class="contact" href="#openModal-about"><button>Contact Me</button></a>
-    <div id="openModal-about" class="modalDialog">
-        <div>
-          <a href="#close"  class="close">X</a>
-        <form>
-            <label>Name: </label>
-            <br />
-            <input id="name" type="text" placeholder="Name">
-            <br />
-            <label>E-mail:</label>
-            <br />
-            <input id="email" type="text" placeholder="E-mail">
-            <br />
-            <label>Message: </label>
-            <br />
-            <textarea id="message" type="text" placeholder="Message"></textarea>
-            <br />
-            <button>Send</button>
-          </form>
-       </div>
-    </div>
-</p>
-</section>
-<br />
-<br />
-<br />
-<container>
-<br />
-
-
