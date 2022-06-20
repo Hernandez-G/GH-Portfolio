@@ -50,10 +50,10 @@ span {
   transition: ease-out .6s;
 }
 
-.links {
+/* .links {
   position: absolute;
   right: 3rem;
-}
+} */
 
 .about{
   display: flex;
@@ -137,7 +137,10 @@ button:hover:before {
 
 .bio {
   color: white;
+  margin: 87px;
+  text-align: -webkit-left;
 }
+
 
 /* carosel */
 
@@ -308,17 +311,71 @@ html, body {
   transform: scale(1.2);
 }
 
+hr {
+  width: 172vmin;
+  top: 75vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
  footer {
 	 width: auto;
 	 height: 100px;
-	 background: #17a16f;
 	 right: 0;
-	 bottom: -80px;
 	 display: flex;
 	 justify-content: center;
 }
 
+.GitHub {
+  display: flex;
+  font-size: 40px;
+}
 
+.linkedIn {
+  font-size: 40px;
+}
+
+.links{
+  color:white;
+  margin: 15px;
+}
+
+.nav-left{
+
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  text-decoration: none;
+  z-index: 2;
+}
+ul.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.socials li i {
+  transition-duration: 300ms;
+  font-size: 25px;
+}
+
+ul.socials li i:hover {
+  transform: scale(1.2);
+  color: bisque;
+}
+
+ul.socials::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background: white;
+}
 
 /* .about-me{
 	align-items: center;
