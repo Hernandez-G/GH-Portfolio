@@ -7,9 +7,14 @@ nav {
 	color: white;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin-bottom: 60vmin;
   
 }
+
+.wrap {
+  margin-top: 15vmin;
+}
+
 
 .line {
   width: 100vw;
@@ -51,6 +56,8 @@ span {
 }
 
 .about{
+  display: flex;
+  justify-content: center;
 	color: white;
 	font-size: 25px;
 }
@@ -58,14 +65,78 @@ span {
 
 
 .about-container {
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba(56, 62, 151, 0.541);
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 15px );
+  border-radius: 10px;
   display: flex;
   justify-content: center;
-  background-color: blueviolet;
   border-radius: 10px;
   align-items: center;
   text-align: center;
-  height: 40vmin;
-  width: 40vmin;
+  height: 50vmin;
+  width: 85vmin;
+  margin-bottom: 45vmin;
+  margin-left: 15vmin;
+}
+
+
+
+button {
+  position: absolute;
+  top: 45vmin;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+  background-size: 200%;
+  border-radius: 30px;
+  z-index: 1;
+}
+button:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5%;
+}
+button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+.bio {
+  color: white;
 }
 
 /* carosel */
@@ -191,9 +262,13 @@ html, body {
   margin: 2rem 0 1rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
 }
 .slider__txt {
-  color: #999;
+  color: white;
   margin-bottom: 3rem;
   max-width: 300px;
 }
