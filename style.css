@@ -55,10 +55,10 @@ nav {
 span {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
   text-transform: uppercase;
-  line-height: .8;
-  transition: ease-out .6s;
+  line-height: .9;
+  transition: ease-out .8s;
 }
 
 
