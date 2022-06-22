@@ -8,8 +8,8 @@ let width = window.innerWidth;
 
 function handleMouseMove(evt) {
   let normalizedPosition = evt.pageX / (width/2) - 1;
-  let speedSlow = 150 * normalizedPosition;
-  let speedFast = 200 * normalizedPosition;
+  let speedSlow = 250 * normalizedPosition;
+  let speedFast = 250 * normalizedPosition;
   spansSlow.forEach((span) => {
     span.style.transform = `translate(${speedSlow}px)`;
   });
