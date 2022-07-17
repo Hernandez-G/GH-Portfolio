@@ -1,4 +1,4 @@
-<h1>::OcticonComponent Portfolio</h1>
+<h1>::Octicon:: Portfolio</h1>
 
 <p> 
 
